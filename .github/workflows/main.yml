@@ -19,3 +19,9 @@ jobs:
         
       - name: Run Script
         run: python main.py
+        
+      - name: Commit Updated Table
+        run: |
+          git add mtg_bar.jpg
+          git commit -m "new graph"
+          git push origin main
